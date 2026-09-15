@@ -1,14 +1,14 @@
 terraform {
-  required_version = "~> 1.9.3"
+  required_version = "~> 1.16.2"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.49.0"
+      version = "~> 6.64.0"
     }
   }
   backend "s3" {
     bucket         = "my-eks-cluster-bhanu"
-    region         = "us-east-1"
+    region         = "ap-south-1"
     key            = "eks/terraform.tfstate"
     use_lockfile   = true
     encrypt        = true
