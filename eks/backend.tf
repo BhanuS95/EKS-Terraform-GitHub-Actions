@@ -8,7 +8,7 @@ terraform {
   }
   backend "s3" {
     bucket         = "my-eks-cluster-bhanu"
-    region         = "ap-south-1"
+    region         = "us-east-1"
     key            = "eks/terraform.tfstate"
     use_lockfile   = true
     encrypt        = true
